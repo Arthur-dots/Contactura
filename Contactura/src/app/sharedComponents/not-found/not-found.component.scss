@@ -1,0 +1,63 @@
+:host{
+    display: flex;
+    justify-content: center;
+    background: black; /*fallback for old browser*/
+    background: black; /* Chrome 10-25, Safari 5.1-6 */
+    background: black; /* W3C, IE 10+ / Edge, Firefox 16+, Chrome 26+, Opera12+*/
+  }
+  
+  .Card-NF{
+    max-width: 400px;
+    background:Black;
+  }
+  
+  
+   .example-full-width{
+    width: 100%;
+  }
+  
+
+  
+ img{
+    width: 460px;
+    background:black;
+  }
+  
+   .container-button-enter{
+    display: flex;
+    justify-content: center;
+
+  }
+  
+   .Button{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+   .section-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p{
+      color: white;
+      font-size:xx-large;
+      font-family:Permanent Marker, cursive;
+      justify-content: center;
+      
+  }
+
+  .ButtonYes{
+      background-color: #00934E;
+      font-family: Permanent Marker, cursive;
+      font-size: xx-large;
+  }
+
+  .ButtonNo{
+      background-color: red;
+      font-family: Permanent Marker, cursive;
+      font-size: xx-large;
+ }
