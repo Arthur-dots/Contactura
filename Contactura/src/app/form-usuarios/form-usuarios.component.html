@@ -1,1 +1,30 @@
-<p>form-usuarios works!</p>
+<app-navbar></app-navbar>
+<section>
+    <div class="container_title">
+        <h1>FORMULÁRIO DE USUARIOS</ h1>
+    </div>
+</section>
+<section>
+    <form [formGroup]="formUsuarios">
+        <div class="grid-container">
+            <div>
+                <span>Nome:</span>
+                <input formControlName="name" type="text" name="nome">
+            </div>
+            <div>
+                <span>User:</span>
+                <input formControlName="Username" type="text" name="username">
+            </div>
+        </div>
+        <div class="grid_container_email">
+            <div>
+                <span>Password:</span>
+                <input formControlName="Password" type="password" name="Password">
+            </div>
+            <div>
+                <button routerLink='/lista-usuarios' mat-raised-button color="primary" (click)="save" >Salvar Usuario</button>
+            </div>
+        </div>
+    </form>
+</section>
+

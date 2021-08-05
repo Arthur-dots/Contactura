@@ -6,36 +6,35 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class NautilusGuard implements CanActivate {
-    constructor(private router: Router){};
+    constructor(private router: Router){}
 
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> |  boolean {
-    if(localStorage.getItem('token') !=null ) {
+    if (localStorage.getItem('token') != null ) {
       return true;
     } else{
       this.router.navigate(['/login']);
     }
   }
-  
+
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class NautilusAdminGuard implements CanActivate {
-    constructor(private router: Router){};
-  
+    constructor(private router: Router){}
+
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> |  boolean {
-    if(localStorage.getItem ('token') !=null && localStorage.getItem('adimn') == 'true' ){
+    if (localStorage.getItem ('token') != null && localStorage.getItem('admin') === 'true' ){
       return true;
     }else{
       this.router.navigate(['/login']);
     }
   }
   }
-  
 
 
